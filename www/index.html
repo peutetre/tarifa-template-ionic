@@ -7,6 +7,7 @@
         <link href="app.css" rel="stylesheet">
         <script src="lib/ionic/js/ionic.bundle.js"></script>
         <script src="cordova.js"></script>
+        <script src="settings.js"></script>
         <script src="app.js"></script>
     </head>
     <body ng-app="app" animation="slide-left-right-ios">
@@ -23,15 +24,15 @@
                     <ion-list>
                         <ion-item class="app-left-text">
                             name
-                            <span class="item-note">SuperApp</span>
+                            <span class="item-note">{{name}}</span>
                         </ion-item>
                         <ion-item class="app-left-text">
                             id
-                            <span class="item-note">com.fortytwoloops.toto</span>
+                            <span class="item-note">{{id}}</span>
                         </ion-item>
                         <ion-item class="app-left-text">
                             version
-                            <span class="item-note">1.0.0</span>
+                            <span class="item-note">{{version}}</span>
                         </ion-item>
                     </ion-list>
                 </ion-content>

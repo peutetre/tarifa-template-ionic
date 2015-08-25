@@ -2,7 +2,7 @@
  * app.js - app main entry point
  */
 
-var app = angular.module('app', ['ionic'])
+var app = angular.module('app', ['ionic', 'settings'])
 
 .run(['$ionicPlatform', function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -15,12 +15,23 @@ var app = angular.module('app', ['ionic'])
     });
 }])
 
-.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-    $stateProvider
-        .state('/', {
-            url: '/',
-            templateUrl: 'start.html'
-        });
+.config([
+    '$stateProvider',
+    '$urlRouterProvider',
+    'id',
+    'product_name',
+    'version',
+    function($stateProvider, $urlRouterProvider, id, product_name, version) {
+        $stateProvider
+            .state('/', {
+                url: '/',
+                templateUrl: 'start.html',
+                controller: ['$scope', function ($scope) {
+                    $scope.name = product_name;
+                    $scope.id = id;
+                    $scope.version = version;
+                }]
+            });
 
-    $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/');
 }]);
