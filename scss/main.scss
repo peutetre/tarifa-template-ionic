@@ -1,9 +1,11 @@
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss/ionic";
 
-
 // app sass
-
-.app-left-text {
-    text-align:left;
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 150px;
 }
