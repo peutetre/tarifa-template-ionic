@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>tarifa-template-ionic</title>
+        <link href="app.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="cordova.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="app" animation="slide-left-right-ios">
+        <div>
+            <div>
+                <ion-nav-bar class="bar-stable"></ion-nav-bar>
+                <ion-nav-view></ion-nav-view>
+            </div>
+        </div>
+        <script id="start.html" type="text/ng-template">
+            <ion-view title="tarifa ionic starter">
+                <ion-content padding="true" class="has-header" style="text-align:center;">
+                    <img src="logo.png" class="padding" style="width: 25%; height: auto;">
+                    <ion-list>
+                        <ion-item class="app-left-text">
+                            name
+                            <span class="item-note">SuperApp</span>
+                        </ion-item>
+                        <ion-item class="app-left-text">
+                            id
+                            <span class="item-note">com.fortytwoloops.toto</span>
+                        </ion-item>
+                        <ion-item class="app-left-text">
+                            version
+                            <span class="item-note">1.0.0</span>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </script>
+    </body>
+</html>

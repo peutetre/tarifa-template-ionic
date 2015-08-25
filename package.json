@@ -1,0 +1,30 @@
+{
+  "name": "tarifa-template-ionic",
+  "version": "1.0.0",
+  "description": "tarifa Ionic template",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/peutetre/tarifa-template-ionic.git"
+  },
+  "keywords": [
+    "tarifa",
+    "template",
+    "ionic",
+    "mobile",
+    "hybrid"
+  ],
+  "author": "Paul Panserrieu <paul@42loops.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peutetre/tarifa-template-ionic/issues"
+  },
+  "homepage": "https://github.com/peutetre/tarifa-template-ionic#readme",
+  "devDependencies": {
+    "bower": "1.5.1",
+    "node-sass": "3.2.0",
+    "q": "1.4.1"
+  }
+}
