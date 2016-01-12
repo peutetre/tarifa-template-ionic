@@ -12,6 +12,9 @@ var app = angular.module('app', ['ionic', 'settings'])
         if(window.StatusBar) {
             StatusBar.styleDefault();
         }
+        if(window.navigator && window.navigator.splashscreen) {
+            window.navigator.splashscreen.hide();
+        }
     });
 }])
 

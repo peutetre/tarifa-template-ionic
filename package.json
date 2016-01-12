@@ -1,6 +1,6 @@
 {
   "name": "tarifa-template-ionic",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "tarifa Ionic template",
   "scripts": {
     "postinstall": "bower install"
@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/peutetre/tarifa-template-ionic#readme",
   "devDependencies": {
-    "bower": "1.5.1",
-    "chokidar": "1.0.5",
-    "node-sass": "3.2.0",
+    "bower": "1.7.2",
+    "chokidar": "1.4.2",
+    "node-sass": "3.4.2",
     "q": "1.4.1"
   }
 }
